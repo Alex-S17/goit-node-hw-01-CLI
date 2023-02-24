@@ -32,15 +32,15 @@ async function getContactById(contactId) {
 async function removeContact(contactId) {
   try {
     const arrayOfContacts = await listContacts();
-    const filteredarrayOfContacts = arrayOfContacts.filter(contact =>
+    const filteredArrayOfContacts = arrayOfContacts.filter(contact =>
       contact.id !== contactId.toString());
 
-    if (filteredarrayOfContacts.length === arrayOfContacts.length) {
+    if (filteredArrayOfContacts.length === arrayOfContacts.length) {
       console.log(`NO CONTACT WITH ID=${contactId} WAS FOUND. THIS COMMAND CANNOT BE PERFORM`);
       return;
     }
     
-    await fs.writeFile(contactsPath, JSON.stringify(filteredarrayOfContacts));
+    await fs.writeFile(contactsPath, JSON.stringify(filteredArrayOfContacts));
     console.log('REMOVED SUCCESSFULLY');
   } catch (error) {
     console.log(error);
