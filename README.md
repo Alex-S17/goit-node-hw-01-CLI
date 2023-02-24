@@ -1,10 +1,8 @@
 # goit-node-hw-01-CLI
 
-1. List of Contcts
-   https://ibb.co/cgT0FSP
+1. List of Contacts https://ibb.co/cgT0FSP
 
-2. Contact by ID
-   https://ibb.co/zR35FkY
+2. Contact by ID https://ibb.co/zR35FkY
 
 3.1. Add new contact - result in the command line
 https://ibb.co/frf0nL3
